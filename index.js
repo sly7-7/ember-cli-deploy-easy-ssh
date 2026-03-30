@@ -34,7 +34,6 @@ module.exports = {
             conn.connect({
               host: h.host,
               username: h.username,
-              privateKeyPath: '/home/sma01/.ssh/id_ed25519'
             })
             .then(conn => {
               this.log(`Successful connection to ${h.host}`, {color: 'green'});
